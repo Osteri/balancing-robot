@@ -1,0 +1,6 @@
+Speksejä:
+- Servo Vin: 5 V
+- Velocity meter: L3G4200D, TWI/SPI, Vin: 2.4 V - 3.6 V
+- Gyroscope: LSM303DLHC, TWI, Vin: 2.16 V - 3.6 V
+- ATmega128: Vin: 4.5 V - 5.5 V
+- Parallax Servo: Vin: 4 V - 6 V, 140 mA +/- 50 mA, PWM: 0,75 ms - 2,25 ms with 20 ms intervals
