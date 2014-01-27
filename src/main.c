@@ -43,22 +43,23 @@ int main(void) {
     /* Pause pulse width 20 ms + control pulse width 1.7 ms (max) = 21.7 ms.
      * 43 400 in OCR1 = 21.7 ms.
      *
-     * Possible OCR1 values: 43000 - 43399.
+     * Possible OCR1A values: 399999 - 40799.
      * .---------------.-------.---------.-------.
      * | Rotation:     | CW    | STEADY  | CCW   |
      * |---------------.--------.--------.-------.
-     * | OCR1A value:  | 43000 | 43200   | 43399 |
+     * | OCR1A - x:    |x: 2600 |x: 3000 |x: 3400|
+     * |---------------.-------.---------.-------.
+     * | ms:           | 1.3   | 1.5     | 1.7   |
      */
 
     while (1) {
         LCDGotoXY(LCD_VALUE_SLOT_1);
-        LCDstring( (uint8_t*)Double2Chars(M_PI), (uint8_t)sizeof(buf) - 1);
+        LCDstring( (uint8_t*)Double2Chars(OCR1A), (uint8_t)sizeof(buf) - 1);
 
-        OCR1A = 43270;
-        _delay_ms(550);
-
-        OCR1A = 43330;
-        _delay_ms(550);
+        OCR1A = ICR1 - 3000;
+        //_delay_ms(200);
+        //OCR1A = ICR1 - 3400;
+        //_delay_ms(200);
 
     }
 }
