@@ -8,7 +8,6 @@
 #include "lcd_lib.h"
 
 #define T1_PS 8
-#define MS2OCR(x) x*2;
 
 #define SHOW_1_DEC 4    // how many decimals we're showing
 #define SHOW_2_DEC 5
@@ -52,14 +51,19 @@ int main(void) {
      * | ms:           | 1.3   | 1.5     | 1.7   |
      */
 
+    int a = 2600;
+
     while (1) {
         LCDGotoXY(LCD_VALUE_SLOT_1);
         LCDstring( (uint8_t*)Double2Chars(OCR1A), (uint8_t)sizeof(buf) - 1);
 
+       // a++;
+       // _delay_ms(10);
+       // OCR1A = ICR1 - a;
+       // _delay_ms(200);
+       // OCR1A = ICR1 - (3400+a);
+       // _delay_ms(200);
         OCR1A = ICR1 - 3000;
-        //_delay_ms(200);
-        //OCR1A = ICR1 - 3400;
-        //_delay_ms(200);
 
     }
 }

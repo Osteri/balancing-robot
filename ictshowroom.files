@@ -1,4 +1,6 @@
 src/lcd_lib.c
 src/lcd_lib.h
+src/TWIPrimitives.c
+src/TWIPrimitives.h
 src/main.c
 src/Makefile
