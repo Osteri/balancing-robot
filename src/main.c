@@ -7,6 +7,7 @@
 
 #include "lcd_lib.h"
 #include "utilities.h"
+#include "L3G4200D.h"
 
 #define LCD_VALUE_SLOT_1 0,0    // x and y, usage: LCDGotoXY(LCD_VALUE_SLOT_1)
 #define LCD_VALUE_SLOT_2 6,0
@@ -22,6 +23,7 @@ int main(void) {
     LCDinit();
     LCDclr();
     _delay_ms(100); // LCD start time
+
 
     /* Pause pulse width 20 ms + control pulse width 1.7 ms (max) = 21.7 ms.
      * 43 400 in OCR1 = 21.7 ms period.
@@ -46,24 +48,7 @@ int main(void) {
         LCDGotoXY(LCD_VALUE_SLOT_1);
         LCDstring( (uint8_t*)Double2Chars(a), (uint8_t)sizeof(buf) - 1);
 
-        _delay_ms(50);
 
-        a--;
-        a = LimitValueBetween(a, -400, 400);
-
-        OCR1A = 3000 + a;
-        ICR1 = 39999 + OCR1A;
-
-        if (a > 390) {
-            while (1) {
-                OCR1A = 3000;
-                _delay_ms(50);
-                ICR1 = 39999 + OCR1A;
-            }
-        }
-
-//        LCDGotoXY(LCD_VALUE_SLOT_1);
-//        LCDstring( (uint8_t*)Double2Chars((double)a), (uint8_t)sizeof(buf) - 1);
 
     }
 }

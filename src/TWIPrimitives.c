@@ -1,8 +1,12 @@
 #include "TWIPrimitives.h"
 
+/*
+ * SCL frequency = CPU Clock frequency / (16 + 2(TWBR) * 4^(TWSR))
+ *               = 100 kHz
+ */
 void TWIInit(void) {
-    TWSR = 0x00; // 
-    TWBR = 0x0C; // TWI clock 100 kHz
+    TWSR = 0;
+    TWBR = 72;
     TWCR = (1<<TWEN); // Enable TWI
 }
 

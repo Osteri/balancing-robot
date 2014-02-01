@@ -2,6 +2,8 @@ src/lcd_lib.c
 src/lcd_lib.h
 src/TWIPrimitives.c
 src/TWIPrimitives.h
+src/L3G4200D.c
+src/L3G4200D.h
 src/utilities.c
 src/utilities.h
 src/main.c
