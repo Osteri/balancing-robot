@@ -2,5 +2,7 @@ src/lcd_lib.c
 src/lcd_lib.h
 src/TWIPrimitives.c
 src/TWIPrimitives.h
+src/utilities.c
+src/utilities.h
 src/main.c
 src/Makefile
