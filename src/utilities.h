@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-static char buf[8] = ""; // for double2chars conversion
+static char buf[8] = ""; // for Double2Chars conversion
 
 char* Double2Chars(double num);
 int LimitValueBetween(int value, int min, int max);

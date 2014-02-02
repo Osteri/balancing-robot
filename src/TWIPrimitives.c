@@ -2,8 +2,7 @@
 
 /*
  * SCL frequency = CPU Clock frequency / (16 + 2(TWBR) * 4^(TWSR))
- *               = 100 kHz
- */
+ *               = 100 kHz */
 void TWIInit(void) {
     TWSR = 0;
     TWBR = 72;
