@@ -1,11 +1,13 @@
 #include "TWIPrimitives.h"
 
 /*
- * SCL frequency = CPU Clock frequency / (16 + 2(TWBR) * 4^(TWSR))
- *               = 100 kHz */
+ * SCL frequency = CPU Clock frequency / (16 + 2 * TWBR * 4^(TWSR))
+ *               = 16 000 000 / (16 + 2 * 18 * 4^1)
+ *               = 100 kHz
+ */
 void TWIInit(void) {
-    TWSR = 0;
-    TWBR = 72;
+    TWSR &= ~(1<<TWPS1 | 1<<TWPS0); // TWSR = 1
+    TWBR = 18;
     TWCR = (1<<TWEN); // Enable TWI
 }
 
@@ -44,5 +46,6 @@ uint8_t TWIGetStatus(void) {
 
 void TWIError(void) {
     // Add your error routine here
-    TWIStop();	
+    // TWIStop();
+    PORTD = 0xFF;
 }
