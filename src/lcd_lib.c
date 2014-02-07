@@ -13,6 +13,10 @@
 //		which can be found at http://www.gnu.org/licenses/gpl.txt
 //
 //*****************************************************************************
+#ifndef F_CPU
+#define F_CPU 16000000UL
+#endif
+
 #include "lcd_lib.h"
 #include <inttypes.h>
 #include <avr/io.h>

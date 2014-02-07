@@ -8,7 +8,7 @@
 void TWIInit(void) {
     TWSR &= ~(1<<TWPS1 | 1<<TWPS0); // TWSR = 1
     TWBR = 18;
-    TWCR = (1<<TWEN); // Enable TWI
+    TWCR |= (1<<TWEN); // Enable TWI
 }
 
 void TWIStart(void) {

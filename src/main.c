@@ -23,12 +23,12 @@ int main(void) {
     //DDRD = 0x00;
     //PORTD = 0x00;
 
-    DDRA = 0x00;
-    PORTA = 0x00;
+    //DDRA = 0x00;
+    //PORTA = 0x00;
 
+    _delay_ms(100);
     LCDinit();
     LCDclr();
-    _delay_ms(100); // LCD start time
 
 
     /* Pause pulse width 20 ms + control pulse width 1.7 ms (max) = 21.7 ms.
@@ -41,23 +41,27 @@ int main(void) {
      * | OCR1A - x:    |x: 2600 |x: 3000 |x: 3400|
      * |---------------.-------.---------.-------.
      * | ms:           | 1.3   | 1.5     | 1.7   | */
-//    TCCR1A |= 1<<COM1A1 | 1<<WGM11;          // fast PWM
-//    TCCR1B |= 1<<WGM13 | 1<<WGM12 | 1<<CS11; // prescaler: 8
+    //TCCR1A |= 1<<COM1A1 | 1<<WGM11;          // fast PWM
+    //TCCR1B |= 1<<WGM13 | 1<<WGM12 | 1<<CS11; // prescaler: 8
 
-//    OCR1A = 3000;           // steady by default
-//    ICR1 = 39999 + OCR1A;
+    //OCR1A = 3000;           // steady by default
+    //ICR1 = 39999 + OCR1A;
 
-    L3G4200D_Init();
+    //L3G4200D_Init();
 
     while (1) {
         //LCDGotoXY(LCD_VALUE_SLOT_1);
         //LCDstring( (uint8_t*)Double2Chars(a), (uint8_t)sizeof(buf) - 1);
 
         //_delay_ms(1);
-        uint8_t data = L3G4200D_ReadAddress();
-
+        //int data = 0;
+        //_delay_ms(500);
+        //int data = L3G4200D_ReadAddress();
         LCDGotoXY(LCD_VALUE_SLOT_1);
-        LCDstring( (uint8_t*)Double2Chars(data), (uint8_t)sizeof(buf) - 1);
+        LCDstring( (uint8_t*)Double2Chars(M_PI), (uint8_t)sizeof(buf) - 1);
+
+        //LCDGotoXY(LCD_VALUE_SLOT_4);
+        //LCDstring( (uint8_t*)Double2Chars(M_PI), (uint8_t)sizeof(buf) - 1);
 
     }
 }

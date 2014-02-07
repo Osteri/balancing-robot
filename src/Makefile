@@ -141,6 +141,7 @@ CFLAGS=-I. $(INC) -g -mmcu=$(MCU) -O$(OPTLEVEL) -std=c99 \
 	-funsigned-bitfields -funsigned-char    \
 	-Wall -Wstrict-prototypes               \
 	-Wa,-ahlms=$(firstword                  \
+        -DF_CPU=16000000UL                      \
 	$(filter %.lst, $(<:.c=.lst)))
 
 # c++ specific flags
