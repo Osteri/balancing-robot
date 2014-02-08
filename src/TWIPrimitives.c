@@ -46,6 +46,4 @@ uint8_t TWIGetStatus(void) {
 
 void TWIError(void) {
     // Add your error routine here
-    // TWIStop();
-    PORTD = 0xFF;
 }

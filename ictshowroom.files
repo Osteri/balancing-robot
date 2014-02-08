@@ -6,5 +6,7 @@ src/L3G4200D.c
 src/L3G4200D.h
 src/utilities.c
 src/utilities.h
+src/servo_controller.c
+src/servo_controller.h
 src/main.c
 src/Makefile

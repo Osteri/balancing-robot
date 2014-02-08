@@ -1,13 +1,15 @@
 #include "L3G4200D.h"
 
-/* SDO pin connected to Vcc -> SDO_PIN = 1
- * SDO pin connected to GND -> SDO_PIN = 0
+/*
+ * L3G4200D I²C address will change 0xD0 or 0xD2, depending
+ * if the SDO pin is connected to Vcc or GND.
+ *
+ * SDO pin address configuration gives us ability to connect two
+ * identical gyros.
+ *
+ * SDO pin connected to Vcc -> #define SDO_PIN
+ * SDO pin connected to GND -> // nothing
  */
-
-#define CTRL_REG1 0x20
-
-//#define SDO_PIN
-
 #ifdef SDO_PIN
     #define L3G4200D_R_ADDR 0xD1
     #define L3G4200D_W_ADDR 0xD0
@@ -16,8 +18,7 @@
     #define L3G4200D_W_ADDR 0xD2
 #endif
 
-//#define L3G4200D_W_ADDR 0x32
-//#define L3G4200D_R_ADDR 0x33
+#define CTRL_REG1 0x20
 
 void L3G4200D_Init(void) {
     TWIInit();
@@ -42,14 +43,4 @@ uint8_t L3G4200D_ReadAddress(void) {
     u8data = TWIReadNACK();
     TWIStop();
     return u8data;
-
-//    uint8_t u8data;
-//    TWIStart();
-//    TWIWrite((uint8_t)(DS1307_ADDR));
-//    TWIWrite((uint8_t)(mem));
-//    TWIStart();
-//    TWIWrite((uint8_t)(DS1307_ADDR + 1));
-//    u8data = TWIReadNACK();
-//    TWIStop();
-//    return u8data;
 }

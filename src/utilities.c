@@ -1,5 +1,8 @@
 #include "utilities.h"
 
+#include <stdio.h>
+#include <string.h>
+
 /**
  * @brief Convert double value to corresponding char array.
  *
@@ -17,7 +20,11 @@
  * @date 26.1.2014
  **/
 char* Double2Chars(double num) {
-    snprintf(buf, sizeof(double) * 8, "%f", num);
+
+    uint8_t size_of_buf = sizeof(buf) / sizeof(char);
+
+    memset(buf, ' ', size_of_buf); // empty string
+    snprintf(buf, size_of_buf, "%f", num);
     return buf;
 }
 

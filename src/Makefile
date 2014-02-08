@@ -84,7 +84,7 @@ PROJECTNAME=ictshowroom
 # (list all files to compile, e.g. 'a.c b.cpp as.S'):
 # Use .cc, .cpp or .C suffix for C++ files, use .S 
 # (NOT .s !!!) for assembly source code files.
-PRJSRC=main.c lcd_lib.c TWIPrimitives.c utilities.c L3G4200D.c
+PRJSRC=main.c lcd_lib.c TWIPrimitives.c utilities.c L3G4200D.c servo_controller.c
 
 # additional includes (e.g. -I/path/to/mydir)
 INC=
@@ -141,7 +141,6 @@ CFLAGS=-I. $(INC) -g -mmcu=$(MCU) -O$(OPTLEVEL) -std=c99 \
 	-funsigned-bitfields -funsigned-char    \
 	-Wall -Wstrict-prototypes               \
 	-Wa,-ahlms=$(firstword                  \
-        -DF_CPU=16000000UL                      \
 	$(filter %.lst, $(<:.c=.lst)))
 
 # c++ specific flags
