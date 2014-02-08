@@ -18,18 +18,32 @@
 
 int main(void) {
 
-    _delay_ms(100);
+    /* Initialize: */
     LCDinit();
+
+    TWIInit();
+    L3G4200D_Init();
+    //Servo_Init();
+
+    /* Prepare: */
     LCDclr();
 
-    L3G4200D_Init();
-    Servo_Init();
 
     while (1) {
-        _delay_ms(100);
-        int data = L3G4200D_ReadAddress();
-        LCDGotoXY(LCD_VALUE_SLOT_1);
         uint8_t size_of_buf = sizeof(buf) / sizeof(char);
-        LCDstring( (uint8_t*)Double2Chars(data), size_of_buf - 1 );
+
+        _delay_ms(500);
+
+        LCDGotoXY(LCD_VALUE_SLOT_1);
+        LCDstring((uint8_t*)"X:", 2);
+        LCDstring( (uint8_t*)Double2Chars(L3G4200D_GetX()), size_of_buf - 1 );
+
+        LCDGotoXY(LCD_VALUE_SLOT_2);
+        LCDstring((uint8_t*)" Y:", 3);
+        LCDstring( (uint8_t*)Double2Chars(L3G4200D_GetY()), size_of_buf - 1 );
+
+        LCDGotoXY(LCD_VALUE_SLOT_4);
+        LCDstring((uint8_t*)"Z:", 2);
+        LCDstring((uint8_t*)Double2Chars(L3G4200D_GetZ()), size_of_buf - 1 );
     }
 }

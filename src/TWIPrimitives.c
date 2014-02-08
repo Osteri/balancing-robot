@@ -17,7 +17,7 @@ void TWIStart(void) {
 }
 
 void TWIStop(void) {
-    TWCR = (1<<TWINT)|(1<<TWSTO)|(1<<TWEN); 
+    TWCR = (1<<TWINT)|(1<<TWSTO)|(1<<TWEN);
 }
 
 void TWIWrite(uint8_t data) { 
@@ -38,12 +38,61 @@ uint8_t TWIReadNACK(void) {
     return TWDR;
 }
 
-uint8_t TWIGetStatus(void) {
-    uint8_t status;
-    status = TWSR & 0xF8;
-    return status;
+void TWISetData(uint8_t addr, uint8_t mem, uint8_t value) {
+
+    TWIStart();
+    if (TW_STATUS != TW_START)
+        TWIError(TW_STATUS);
+
+    TWIWrite((uint8_t)(addr + TW_WRITE));
+    if (TW_STATUS != TW_MT_SLA_ACK)
+        TWIError(TW_STATUS);
+
+    TWIWrite((uint8_t)(mem));
+    if (TW_STATUS != TW_MT_DATA_ACK)
+        TWIError(TW_STATUS);
+
+    TWIWrite((uint8_t)(value));
+    if (TW_STATUS != TW_MT_DATA_ACK)
+        TWIError(TW_STATUS);
+
+    TWIStop();
 }
 
-void TWIError(void) {
+uint8_t TWIGetData(uint8_t addr, uint8_t mem) {
+
+    uint8_t data;
+
+    TWIStart();
+    if (TW_STATUS != TW_START)
+        TWIError(TW_STATUS);
+
+    TWIWrite((uint8_t)(addr + TW_WRITE));
+    if (TW_STATUS != TW_MT_SLA_ACK)
+        TWIError(TW_STATUS);
+
+    TWIWrite((uint8_t)(mem));
+    if (TW_STATUS != TW_MT_DATA_ACK)
+        TWIError(TW_STATUS);
+
+    TWIStart();
+    if (TW_STATUS != TW_REP_START)
+        TWIError(TW_STATUS);
+
+    TWIWrite((uint8_t)(addr + TW_READ));
+    if (TW_STATUS != TW_MT_DATA_ACK)
+        TWIError(TW_STATUS);
+
+    data = TWIReadNACK();
+    if (TW_STATUS != TW_MT_DATA_NACK)
+        TWIError(TW_STATUS);
+
+    TWIStop();
+
+    return data;
+}
+
+
+void TWIError(int errorCode) {
     // Add your error routine here
 }
