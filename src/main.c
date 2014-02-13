@@ -23,7 +23,7 @@
 #define LCD_VALUE_SLOT_5 6,1
 #define LCD_VALUE_SLOT_6 12,1
 
-volatile unsigned char UARTbuf;
+volatile unsigned char UART_RX_buf;
 
 void USART_Init(void) {
     UBRR1L = BAUD_PRESCALE; // load lower 8-bits into the low byte of the UBRR register
@@ -33,7 +33,7 @@ void USART_Init(void) {
 }
 
 ISR(USART1_RX_vect) { // receive byte
-    UARTbuf = UDR1;
+    UART_RX_buf = UDR1;
 }
 
 void USART_SendByte(uint8_t data, FILE* stream) {
@@ -62,9 +62,9 @@ int main(void) {
     stdout = &usart_stream;
 
     while (1) {
-        uint8_t size_of_buf = sizeof(buf) / sizeof(char);
+//        uint8_t size_of_buf = sizeof(buf) / sizeof(char);
 
-        _delay_ms(500);
+        _delay_ms(1);
 
 //        LCDGotoXY(LCD_VALUE_SLOT_1);
 //        LCDstring((uint8_t*)"X:", 2);
@@ -78,13 +78,13 @@ int main(void) {
 //        LCDstring((uint8_t*)"Z:", 2);
 //        LCDstring((uint8_t*)Double2Chars(L3G4200D_GetZ()), size_of_buf - 1 );
 
-        int x = L3G4200D_GetX();
-        int y = L3G4200D_GetY();
-        int z = L3G4200D_GetZ();
+        double x = L3G4200D_GetX() / (double)32768; // normalize
+        double y = L3G4200D_GetY() / (double)32768;
+        double z = L3G4200D_GetZ() / (double)32768;
 
-        printf("x:%d ", x);
-        printf("y:%d ", y);
-        printf("z:%d ", z);
+        printf("x:%+3.5f ", x);
+        printf("y:%+3.5f ", y);
+        printf("z:%+3.5f ", z);
         printf("\n\r");
 
     }
