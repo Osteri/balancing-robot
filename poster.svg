@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -15,51 +16,101 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="osterinposteri.svg">
-  <defs
-     id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient3887">
-      <stop
-         style="stop-color:#00ff00;stop-opacity:1;"
-         offset="0"
-         id="stop3889" />
-      <stop
-         style="stop-color:#00ff00;stop-opacity:0;"
-         offset="1"
-         id="stop3891" />
-    </linearGradient>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3887"
-       id="radialGradient3893"
-       cx="374.46094"
-       cy="631.11827"
-       fx="374.46094"
-       fy="631.11827"
-       r="371.55469"
-       gradientTransform="matrix(1,0,0,1.6586766,0,-415.70283)"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+   sodipodi:docname="poster.svg">
   <sodipodi:namedview
      id="base"
-     pagecolor="#333333"
+     pagecolor="#001900"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
      inkscape:cx="484.04546"
-     inkscape:cy="620.05554"
+     inkscape:cy="580.65959"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="422"
+     inkscape:window-width="1276"
      inkscape:window-height="729"
-     inkscape:window-x="854"
+     inkscape:window-x="0"
      inkscape:window-y="18"
      inkscape:window-maximized="0" />
+  <defs
+     id="defs4">
+    <linearGradient
+       osb:paint="gradient"
+       id="linearGradient4343">
+      <stop
+         id="stop4345"
+         offset="0"
+         style="stop-color:#ffff00;stop-opacity:1;" />
+      <stop
+         id="stop4347"
+         offset="1"
+         style="stop-color:#ffff00;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3887"
+       inkscape:collect="always">
+      <stop
+         id="stop3889"
+         offset="0"
+         style="stop-color:#00ff00;stop-opacity:1;" />
+      <stop
+         id="stop3891"
+         offset="1"
+         style="stop-color:#00ff00;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.6586766,0,-415.70283)"
+       r="371.55469"
+       fy="631.11827"
+       fx="374.46094"
+       cy="631.11827"
+       cx="374.46094"
+       id="radialGradient3893"
+       xlink:href="#linearGradient3887"
+       inkscape:collect="always" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3784"
+       id="radialGradient3790"
+       cx="264.28571"
+       cy="107.225"
+       fx="264.28571"
+       fy="107.225"
+       r="260.71429"
+       gradientTransform="matrix(1,0,0,0.35616436,0,69.035276)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3784">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3786" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3788" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       id="filter6220">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.4548098"
+         id="feGaussianBlur6222" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter6306">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="4.5285356"
+         id="feGaussianBlur6308" />
+    </filter>
+  </defs>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -73,64 +124,136 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
+     transform="translate(0,207.63796)"
      id="layer1"
-     transform="translate(0,207.63796)">
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
     <flowRoot
-       xml:space="preserve"
+       transform="matrix(1.0195656,0,0,1.0132528,-0.10612374,-218.45786)"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:url(#radialGradient3893);fill-opacity:1;stroke:none;filter:url(#filter6220);font-family:FreeMono;-inkscape-font-specification:FreeMono"
        id="flowRoot3037"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:url(#radialGradient3893);fill-opacity:1;stroke:none;font-family:FreeMono;-inkscape-font-specification:FreeMono"
-       transform="matrix(1.0195656,0,0,1.0132528,-0.10612374,-218.45786)"><flowRegion
-         id="flowRegion3039"
-         style="fill-opacity:1;fill:url(#radialGradient3893)"><rect
-           id="rect3041"
-           width="762.85718"
-           height="1254.2858"
-           x="0"
-           y="2.8571429"
+       xml:space="preserve"><flowRegion
+         style="fill:url(#radialGradient3893);fill-opacity:1"
+         id="flowRegion3039"><rect
+           style="fill:url(#radialGradient3893);fill-opacity:1"
            ry="0"
-           style="fill:url(#radialGradient3893);fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara3043"
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">01010010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3045">01010010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3047">11100100100000110011111001</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3079">01111010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3085">01010010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3087">11100100100000110011111001</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3089">01111010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3091">01111010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3093">01010010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3095">01111001001000010100001001</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3097">01111010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3099">11100100100000110011111001</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3101">01010010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3103">11100100100000110011111001</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3105">01111010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3107">01111010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3109">11100100100000110011111001</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3111">01010010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3113">11100100100000110011111001</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3115">01111010101010101010101111</flowPara><flowPara
-         style="font-size:48px;fill:url(#radialGradient3893);fill-opacity:1;-inkscape-font-specification:Liberation Mono;font-family:Liberation Mono;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
-         id="flowPara3117">11100100100000110011111001</flowPara></flowRoot>  </g>
+           y="2.8571429"
+           x="0"
+           height="1254.2858"
+           width="762.85718"
+           id="rect3041" /></flowRegion><flowPara
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
+         id="flowPara3043">01010010101010101010101111</flowPara><flowPara
+         id="flowPara3045"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01010010101010101010101111</flowPara><flowPara
+         id="flowPara3047"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">11100100100000110011111001</flowPara><flowPara
+         id="flowPara3079"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01111010101010111010101111</flowPara><flowPara
+         id="flowPara3085"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01010010101010101010101111</flowPara><flowPara
+         id="flowPara3087"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">11100100100000110111111001</flowPara><flowPara
+         id="flowPara3089"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01111010101010101010101111</flowPara><flowPara
+         id="flowPara3091"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01111010101001101110101111</flowPara><flowPara
+         id="flowPara3093"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01010010101010101010101111</flowPara><flowPara
+         id="flowPara3095"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01111001001000010100001001</flowPara><flowPara
+         id="flowPara3097"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01111010101010101010101111</flowPara><flowPara
+         id="flowPara3099"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">11100100100000110011111001</flowPara><flowPara
+         id="flowPara3101"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">010010<flowSpan
+   style="fill:#ffffff"
+   id="flowSpan6224">BALANCING_ROBOT</flowSpan>01011</flowPara><flowPara
+         id="flowPara3103"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">1110000100000110011111001</flowPara><flowPara
+         id="flowPara3105"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01111010101011101010101111</flowPara><flowPara
+         id="flowPara3107"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01111010101010101010101111</flowPara><flowPara
+         id="flowPara3109"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">11100100100000110011111001</flowPara><flowPara
+         id="flowPara3111"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01010010101010101010101111</flowPara><flowPara
+         id="flowPara3113"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">11100100100000110011111001</flowPara><flowPara
+         id="flowPara3115"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">01111010101010101010101111</flowPara><flowPara
+         id="flowPara3117"
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:url(#radialGradient3893);fill-opacity:1;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono">11100100100000110011111001</flowPara></flowRoot>    <g
+       transform="translate(-32.300271,-184.94208)"
+       inkscape:label="レイヤー"
+       id="g6136"
+       style="fill:none;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1;fill-opacity:1;filter:url(#filter6306);opacity:0.80841121">
+      <path
+         inkscape:transform-center-y="48.929548"
+         inkscape:transform-center-x="-1.229855"
+         id="path6138"
+         d="m 198.44345,655.68238 c 5.96899,16.22498 27.2953,38.02907 47.42109,30.8458 l 33.43681,-11.93421 -9.98621,-27.97898 -33.43681,11.93422 c -12.29564,4.38854 -22.16029,-4.11731 -24.1968,-9.8231 l -0.90978,-2.549 c -2.0365,-5.70579 0.21312,-18.53545 12.50876,-22.92399 l 0.95961,-0.3425 6.87154,19.25241 17.40871,1.69767 -9.37612,-26.26964 17.57307,-6.27215 -9.98621,-27.97898 -17.57307,6.27216 -2.77217,-7.76694 -17.41941,-1.72767 5.28745,14.81416 -0.95962,0.34251 c -20.12579,7.18326 -22.82669,37.56311 -17.17347,53.90079 l 0.11774,0.32987 2.20489,6.17757 z"
+         style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="ccccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6140"
+         d="m 271.29606,557.79488 24.13761,13.35773 c 3.24562,1.87385 12.99377,6.36642 7.38713,8.37419 l -42.69886,0 -8.11946,16.46183 55.78552,0.19105 c 29.07693,0 46.2879,-14.48867 16.39813,-31.74553 l -31.67366,-16.58054 c -0.9604,-1.49763 -0.64558,-2.97251 1.40617,-3.38381 l 37.36806,0 6.84582,-14.70733 -47.73183,0 c -35.57665,-0.36389 -35.62903,18.64106 -19.10463,28.03241 z"
+         style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path6142"
+         d="m 356.43656,529.36733 28.6797,0 -2.91118,66.53998 -22.90282,0 z"
+         style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path6144"
+         d="m 414.93313,529.47267 c -4.09559,0 -7.10055,3.30586 -7.10055,7.06871 l -3.08859,59.44725 26.01415,0 0,-46.4561 c 0.1395,-0.49443 0.86612,-0.70162 1.08258,0.19105 l 12.73644,35.98038 c 1.6318,3.82695 2.21333,8.06702 5.85875,10.02993 l 9.26574,0 0.89155,0 9.26574,0 c 3.64541,-1.96291 4.22696,-6.20298 5.85876,-10.02993 l 12.73642,-35.98038 c 0.21646,-0.89267 0.94318,-0.68548 1.0826,-0.19105 l 0,46.4561 25.9823,0 -3.08859,-59.44725 c 0,-3.76285 -2.97313,-7.06871 -7.06871,-7.06871 l -25.95047,0 c -1.8137,-0.035 -3.29126,1.79645 -4.36221,4.07566 l -13.8827,38.52767 c -0.3193,0.84518 -0.61749,1.08803 -0.98707,1.14628 -0.0198,-0.002 -0.0442,0.003 -0.0637,0 -0.3696,-0.0583 -0.69961,-0.3011 -1.01891,-1.14628 l -13.85087,-38.52767 c -1.07095,-2.27921 -2.54851,-4.11061 -4.36221,-4.07566 l -25.95047,0 z"
+         style="fill:none;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path6146"
+         d="m 576.90854,526.67067 c -19.71765,0 -44.67929,9.9255 -45.40533,30.98133 l -0.0318,0 0,0.9234 0,6.27268 0,0.92338 0.0318,0 c 0.71479,21.06603 25.68305,30.98135 45.40533,30.98135 l 5.8906,0 1.9423,0 5.92245,0 c 19.72228,0 44.6596,-9.91532 45.3735,-30.98135 l 0.0318,0 0,-0.92338 0,-6.27268 0,-0.9234 -0.0318,0 c -0.72514,-21.05583 -25.65585,-30.98133 -45.3735,-30.98133 l -5.92245,0 -1.9423,0 -5.8906,0 z m 0.7642,14.9016 5.1264,0 1.9423,0 5.12642,0 c 9.62828,0 18.04791,7.68514 18.59516,15.44291 l 0,0.63682 0,8.11946 0,0.63684 c -0.54725,7.75776 -8.96688,15.44289 -18.59516,15.44289 l -5.12642,0 -1.9423,0 -5.1264,0 c -9.62828,0 -18.04791,-7.68513 -18.59518,-15.44289 l 0,-0.63684 0,-8.11946 0,-0.63682 c 0.54727,-7.75777 8.9669,-15.44291 18.59518,-15.44291 z"
+         style="fill:none;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="fill:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000000;stroke-opacity:1"
+       id="layer2"
+       inkscape:label="レイヤー"
+       transform="translate(-32.300271,-184.94208)">
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 198.44345,655.68238 c 5.96899,16.22498 27.2953,38.02907 47.42109,30.8458 l 33.43681,-11.93421 -9.98621,-27.97898 -33.43681,11.93422 c -12.29564,4.38854 -22.16029,-4.11731 -24.1968,-9.8231 l -0.90978,-2.549 c -2.0365,-5.70579 0.21312,-18.53545 12.50876,-22.92399 l 0.95961,-0.3425 6.87154,19.25241 17.40871,1.69767 -9.37612,-26.26964 17.57307,-6.27215 -9.98621,-27.97898 -17.57307,6.27216 -2.77217,-7.76694 -17.41941,-1.72767 5.28745,14.81416 -0.95962,0.34251 c -20.12579,7.18326 -22.82669,37.56311 -17.17347,53.90079 l 0.11774,0.32987 2.20489,6.17757 z"
+         id="rect2997-4"
+         inkscape:transform-center-x="-1.229855"
+         inkscape:transform-center-y="48.929548" />
+      <path
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 271.29606,557.79488 24.13761,13.35773 c 3.24562,1.87385 12.99377,6.36642 7.38713,8.37419 l -42.69886,0 -8.11946,16.46183 55.78552,0.19105 c 29.07693,0 46.2879,-14.48867 16.39813,-31.74553 l -31.67366,-16.58054 c -0.9604,-1.49763 -0.64558,-2.97251 1.40617,-3.38381 l 37.36806,0 6.84582,-14.70733 -47.73183,0 c -35.57665,-0.36389 -35.62903,18.64106 -19.10463,28.03241 z"
+         id="rect3091-0"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccccccccc" />
+      <path
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 356.43656,529.36733 28.6797,0 -2.91118,66.53998 -22.90282,0 z"
+         id="rect3146-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 414.93313,529.47267 c -4.09559,0 -7.10055,3.30586 -7.10055,7.06871 l -3.08859,59.44725 26.01415,0 0,-46.4561 c 0.1395,-0.49443 0.86612,-0.70162 1.08258,0.19105 l 12.73644,35.98038 c 1.6318,3.82695 2.21333,8.06702 5.85875,10.02993 l 9.26574,0 0.89155,0 9.26574,0 c 3.64541,-1.96291 4.22696,-6.20298 5.85876,-10.02993 l 12.73642,-35.98038 c 0.21646,-0.89267 0.94318,-0.68548 1.0826,-0.19105 l 0,46.4561 25.9823,0 -3.08859,-59.44725 c 0,-3.76285 -2.97313,-7.06871 -7.06871,-7.06871 l -25.95047,0 c -1.8137,-0.035 -3.29126,1.79645 -4.36221,4.07566 l -13.8827,38.52767 c -0.3193,0.84518 -0.61749,1.08803 -0.98707,1.14628 -0.0198,-0.002 -0.0442,0.003 -0.0637,0 -0.3696,-0.0583 -0.69961,-0.3011 -1.01891,-1.14628 l -13.85087,-38.52767 c -1.07095,-2.27921 -2.54851,-4.11061 -4.36221,-4.07566 l -25.95047,0 z"
+         id="path3149-1" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 576.90854,526.67067 c -19.71765,0 -44.67929,9.9255 -45.40533,30.98133 l -0.0318,0 0,0.9234 0,6.27268 0,0.92338 0.0318,0 c 0.71479,21.06603 25.68305,30.98135 45.40533,30.98135 l 5.8906,0 1.9423,0 5.92245,0 c 19.72228,0 44.6596,-9.91532 45.3735,-30.98135 l 0.0318,0 0,-0.92338 0,-6.27268 0,-0.9234 -0.0318,0 c -0.72514,-21.05583 -25.65585,-30.98133 -45.3735,-30.98133 l -5.92245,0 -1.9423,0 -5.8906,0 z m 0.7642,14.9016 5.1264,0 1.9423,0 5.12642,0 c 9.62828,0 18.04791,7.68514 18.59516,15.44291 l 0,0.63682 0,8.11946 0,0.63684 c -0.54725,7.75776 -8.96688,15.44289 -18.59516,15.44289 l -5.12642,0 -1.9423,0 -5.1264,0 c -9.62828,0 -18.04791,-7.68513 -18.59518,-15.44289 l 0,-0.63684 0,-8.11946 0,-0.63682 c 0.54727,-7.75777 8.9669,-15.44291 18.59518,-15.44291 z"
+         id="path3945-8" />
+    </g>
+  </g>
 </svg>
