@@ -67,6 +67,7 @@ GLWidget::~GLWidget()
     glDeleteLists(gear1, 1);
     glDeleteLists(gear2, 1);
     glDeleteLists(gear3, 1);
+    termioswrapper.Close();
 }
 
 void GLWidget::setXRotation(int angle)

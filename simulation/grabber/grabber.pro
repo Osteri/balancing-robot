@@ -1,9 +1,13 @@
 HEADERS       = glwidget.h \
-                mainwindow.h
+                mainwindow.h \
+    termioswrapper.h
 SOURCES       = glwidget.cpp \
                 main.cpp \
-                mainwindow.cpp
+                mainwindow.cpp \
+    termioswrapper.cpp
 QT           += opengl widgets
+
+QMAKE_CXXFLAGS += -std=c++11
 
 # install
 target.path = $$[QT_INSTALL_EXAMPLES]/opengl/grabber

@@ -42,6 +42,7 @@
 #define GLWIDGET_H
 
 #include <QGLWidget>
+#include <termioswrapper.h>
 
 class GLWidget : public QGLWidget
 {
@@ -92,6 +93,8 @@ private:
     int gear1Rot;
 
     QPoint lastPos;
+
+    TermiosWrapper termioswrapper;
 };
 
 #endif // GLWIDGET_H
