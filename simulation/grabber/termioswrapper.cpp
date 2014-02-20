@@ -47,8 +47,10 @@ TermiosWrapper::TermiosWrapper()
 }
 
 void TermiosWrapper::ReadChar() {
-    if (read(tty_fd, &c, 1) > 0)
+    if (read(tty_fd, &c, 1) > 0) {
         write(STDOUT_FILENO, &c, 1);
+        // handle char
+    }
 }
 
 void TermiosWrapper::Close() {

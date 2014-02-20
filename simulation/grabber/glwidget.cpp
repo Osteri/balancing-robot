@@ -173,6 +173,7 @@ void GLWidget::mouseMoveEvent(QMouseEvent *event)
 
 void GLWidget::advanceGears()
 {
+    termioswrapper.ReadChar();
     gear1Rot += 2 * 16;
     updateGL();
 }

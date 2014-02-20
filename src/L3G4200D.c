@@ -11,9 +11,9 @@
  * SDO pin connected to GND -> // nothing
  */
 #ifdef SDO_PIN
-#define L3G4200D_ADDR 0xD0
+  #define L3G4200D_ADDR 0xD0
 #else
-#define L3G4200D_ADDR 0xD2
+  #define L3G4200D_ADDR 0xD2
 #endif
 
 /* Control registers */

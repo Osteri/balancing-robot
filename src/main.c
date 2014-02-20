@@ -61,10 +61,13 @@ int main(void) {
     FILE usart_stream = FDEV_SETUP_STREAM(USART_SendByte, NULL, _FDEV_SETUP_WRITE);
     stdout = &usart_stream;
 
+    float dt = 0.001;
+    float xAngle = 0, yAngle = 0, zAngle = 0;
+
     while (1) {
 //        uint8_t size_of_buf = sizeof(buf) / sizeof(char);
 
-        _delay_ms(1);
+        _delay_ms(dt*1000.0f);
 
 //        LCDGotoXY(LCD_VALUE_SLOT_1);
 //        LCDstring((uint8_t*)"X:", 2);
@@ -78,14 +81,25 @@ int main(void) {
 //        LCDstring((uint8_t*)"Z:", 2);
 //        LCDstring((uint8_t*)Double2Chars(L3G4200D_GetZ()), size_of_buf - 1 );
 
-        double x = L3G4200D_GetX() / (double)32768; // normalize
-        double y = L3G4200D_GetY() / (double)32768;
-        double z = L3G4200D_GetZ() / (double)32768;
+//        double x = L3G4200D_GetX() / (double)32768; // normalize
+//        double y = L3G4200D_GetY() / (double)32768;
+//        double z = L3G4200D_GetZ() / (double)32768;
 
-        printf("x:%+3.5f ", x);
-        printf("y:%+3.5f ", y);
-        printf("z:%+3.5f ", z);
+//        printf("x:%+3.5f ", x);
+//        printf("y:%+3.5f ", y);
+//        printf("z:%+3.5f ", z);
+//        printf("\n\r");
+
+        float xDelta = L3G4200D_GetX() * DPS;
+        xAngle += xDelta * dt;
+        float yDelta = L3G4200D_GetY() * DPS;
+        yAngle += yDelta * dt;
+        float zDelta = L3G4200D_GetZ() * DPS;
+        zAngle += zDelta * dt;
+
+        printf("x:%f ", xAngle);
+        printf("y:%f ", yAngle);
+        printf("z:%f ", zAngle);
         printf("\n\r");
-
     }
 }

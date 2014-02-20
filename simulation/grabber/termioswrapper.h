@@ -12,7 +12,6 @@ public:
     int GetZ();
     void ReadChar();
     void Close();
-
 private:
     struct termios tio;
     struct termios stdio;
