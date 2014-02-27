@@ -4,8 +4,12 @@ src/TWIPrimitives.c
 src/TWIPrimitives.h
 src/L3G4200D.c
 src/L3G4200D.h
+src/LSM303DLHC.c
+src/LSM303DLHC.h
 src/utilities.c
 src/utilities.h
+src/serial_driver.c
+src/serial_driver.h
 src/servo_controller.c
 src/servo_controller.h
 src/main.c

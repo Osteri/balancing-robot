@@ -37,7 +37,7 @@ char* Double2Chars(double num) {
  *
  * @returns Value limited between min and max.
  *
- * @example int a = LimitValueBetween(-3, 0, 100); // returns 0
+ * @example LimitValueBetween(-3, 0, 100); // returns 0
  *
  * @author Oskari Teeri
  * @date 1.2.2014
