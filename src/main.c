@@ -12,7 +12,10 @@
 #include "L3G4200D.h"
 #include "servo_controller.h"
 
-/* Define baud rate */
+/* Timer0 prescale. */
+#define T0_PS 128
+
+/* Define baud rate. */
 #define USART_BAUDRATE 38400
 #define BAUD_PRESCALE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
 
@@ -25,6 +28,8 @@
 
 volatile unsigned char UART_RX_buf;
 
+volatile unsigned int cnt = 0;
+
 void USART_Init(void) {
     UBRR1L = BAUD_PRESCALE; // load lower 8-bits into the low byte of the UBRR register
     UBRR1H = (BAUD_PRESCALE >> 8);
@@ -36,70 +41,52 @@ ISR(USART1_RX_vect) { // receive byte
     UART_RX_buf = UDR1;
 }
 
+ISR(TIMER0_COMP_vect) {
+    cnt++; // tick every 1 ms
+}
+
 void USART_SendByte(uint8_t data, FILE* stream) {
-    while((UCSR1A &(1<<UDRE)) == 0); // wait until last byte has been transmitted
+    while((UCSR1A &(1<<UDRE)) == 0); // wait for last byte
     UDR1 = data; // transmit
 }
 
-
 int main(void) {
+
+    /* Use timer0 to create "delta time" for integration.
+     */
+    TCCR0 |= (1<<CS02) | (1<<CS00) | (1<<WGM01);    // CTC
+    TIMSK |= (1<<OCIE0);                            // enable OC interrupt
+    OCR0 = 0.001 / ( (1.0f / F_CPU) * T0_PS );      // CTC TOP
+    OCR0 -= 1;      // it takes one cycle to go TOP -> BOTTOM
+    TCNT0 = 0;
 
     /* Initialize: */
     LCDinit();
-
     TWIInit();
     L3G4200D_Init();
     USART_Init();
     //Servo_Init();
 
-
     /* Prepare: */
     LCDclr();
-    sei();
 
-    /* Use printf() to send data with USART. */
+    /* Use printf() to send data by USART. */
     FILE usart_stream = FDEV_SETUP_STREAM(USART_SendByte, NULL, _FDEV_SETUP_WRITE);
     stdout = &usart_stream;
 
-    float dt = 0.001;
-    float xAngle = 0, yAngle = 0, zAngle = 0;
+    sei();
+
+    register float dt = 0.01;
+    register float xAngle = 0;
 
     while (1) {
-//        uint8_t size_of_buf = sizeof(buf) / sizeof(char);
 
-        _delay_ms(dt*1000.0f);
-
-//        LCDGotoXY(LCD_VALUE_SLOT_1);
-//        LCDstring((uint8_t*)"X:", 2);
-//        LCDstring( (uint8_t*)Double2Chars(L3G4200D_GetX()), size_of_buf - 1 );
-
-//        LCDGotoXY(LCD_VALUE_SLOT_2);
-//        LCDstring((uint8_t*)" Y:", 3);
-//        LCDstring( (uint8_t*)Double2Chars(L3G4200D_GetY()), size_of_buf - 1 );
-
-//        LCDGotoXY(LCD_VALUE_SLOT_4);
-//        LCDstring((uint8_t*)"Z:", 2);
-//        LCDstring((uint8_t*)Double2Chars(L3G4200D_GetZ()), size_of_buf - 1 );
-
-//        double x = L3G4200D_GetX() / (double)32768; // normalize
-//        double y = L3G4200D_GetY() / (double)32768;
-//        double z = L3G4200D_GetZ() / (double)32768;
-
-//        printf("x:%+3.5f ", x);
-//        printf("y:%+3.5f ", y);
-//        printf("z:%+3.5f ", z);
-//        printf("\n\r");
-
-        float xDelta = L3G4200D_GetX() * DPS;
-        xAngle += xDelta * dt;
-        float yDelta = L3G4200D_GetY() * DPS;
-        yAngle += yDelta * dt;
-        float zDelta = L3G4200D_GetZ() * DPS;
-        zAngle += zDelta * dt;
-
-        printf("x:%f ", xAngle);
-        printf("y:%f ", yAngle);
-        printf("z:%f ", zAngle);
-        printf("\n\r");
+        if (cnt % 10 == 0) {
+            float xDelta = L3G4200D_GetX() * 0.00875f;
+            xAngle += xDelta * dt;
+            printf("x:%f ", xAngle);
+            printf("\r");
+        }
     }
 }
+

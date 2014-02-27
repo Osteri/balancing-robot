@@ -16,6 +16,22 @@
   #define L3G4200D_ADDR 0xD2
 #endif
 
+/*
+ * Degree per second value (DPS) depends on the full scale (FS) value.
+ * Datasheet announces DPS as mDPS (milli).
+ */
+#define FS 250
+
+#ifndef FS
+  #error FS not defined.
+#elif FS == 250
+#define DPS 0.00875f
+#elif FS == 500
+  #define DPS 0.01750f
+#elif FS == 2000
+  #define DPS 0.07000f
+#endif
+
 /* Control registers */
 #define L3G4200D_CTRL_REG1 0x20
 #define L3G4200D_CTRL_REG2 0x21
@@ -47,8 +63,11 @@
 
 void L3G4200D_Init(void) {
     /* Write (0x0F) to CTRL_REG1 for switching to Normal mode.
-     * Default mode (0x0E) is power saving mode. */
+     * Default mode (0x0E) is power saving mode.
+     */
     TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG1, 0x0F);
+    //TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG5, 0x10); // enable HP filter
+    //TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG2, 0x06); // set cut off freq
 }
 
 uint8_t L3G4200D_GetTemp(void) {
