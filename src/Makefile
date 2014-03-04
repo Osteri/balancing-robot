@@ -84,7 +84,7 @@ PROJECTNAME=ictshowroom
 # (list all files to compile, e.g. 'a.c b.cpp as.S'):
 # Use .cc, .cpp or .C suffix for C++ files, use .S 
 # (NOT .s !!!) for assembly source code files.
-PRJSRC=main.c lcd_lib.c TWIPrimitives.c utilities.c L3G4200D.c servo_controller.c
+PRJSRC=main.c lcd_lib.c TWIPrimitives.c utilities.c L3G4200D.c servo_controller.c serial_driver.c
 
 # additional includes (e.g. -I/path/to/mydir)
 INC=
@@ -94,7 +94,7 @@ LIBS=-Wl,-u,vfprintf -lprintf_flt -lm
 
 # Optimization level, 
 # use s (size opt), 1, 2, 3 or 0 (off)
-OPTLEVEL=s
+OPTLEVEL=2
 
 
 #####      AVR Dude 'writeflash' options       #####

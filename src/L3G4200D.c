@@ -65,9 +65,11 @@ void L3G4200D_Init(void) {
     /* Write (0x0F) to CTRL_REG1 for switching to Normal mode.
      * Default mode (0x0E) is power saving mode.
      */
-    TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG1, 0x0F);
-    //TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG5, 0x10); // enable HP filter
-    //TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG2, 0x06); // set cut off freq
+    TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG1, 0x0F); // start gyro
+    //TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG2, 0x01); // HPF mode
+    //TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG2, 0x09); // HPF cut off
+    //TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG5, 0x01); // enable HPF
+    //TWISetData(L3G4200D_ADDR, L3G4200D_CTRL_REG5, 0x10);
 }
 
 uint8_t L3G4200D_GetTemp(void) {
