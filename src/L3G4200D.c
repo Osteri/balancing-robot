@@ -61,6 +61,7 @@
 #define L3G4200D_INT1_TSH_ZL 0x37
 #define L3G4200D_INT1_DURATION 0x38
 
+
 void L3G4200D_Init(void) {
     /* Write (0x0F) to CTRL_REG1 for switching to Normal mode.
      * Default mode (0x0E) is power saving mode.
